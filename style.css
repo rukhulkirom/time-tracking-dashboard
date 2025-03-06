@@ -34,6 +34,7 @@ body {
   min-height: 100vh;
   background-color: var(--color-very-dark-blue);
   color: white;
+  padding: 1rem;
 }
 
 .dashboard {
@@ -114,6 +115,7 @@ body {
 }
 
 .container-card {
+  height: 220px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -229,8 +231,18 @@ body {
     width: 95%;
   }
 
+  .container-card {
+    height: 200px;
+  }
+
   .activity-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .activity-card__time-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -272,5 +284,14 @@ body {
 
   .activity-card__current-time {
     font-size: 40px;
+  }
+
+  .activity-card--work,
+  .activity-card--play,
+  .activity-card--study,
+  .activity-card--exercise,
+  .activity-card--social,
+  .activity-card--self-care {
+    background-position: top 10px right 15px;
   }
 }
