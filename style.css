@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* Color Variables */
+  --color-blue: hsl(246, 80%, 60%);
+  --color-work: hsl(15, 100%, 70%);
+  --color-play: hsl(195, 74%, 62%);
+  --color-study: hsl(348, 100%, 68%);
+  --color-exercise: hsl(145, 58%, 55%);
+  --color-social: hsl(264, 64%, 52%);
+  --color-self-care: hsl(43, 84%, 65%);
+
+  /* Neutral Colors */
+  --color-very-dark-blue: hsl(226, 43%, 10%);
+  --color-dark-blue: hsl(235, 46%, 20%);
+  --color-desaturated-blue: hsl(235, 45%, 61%);
+  --color-pale-blue: hsl(236, 100%, 87%);
+
+  /* Typography */
+  --font-family: "Rubik", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-very-dark-blue);
+  color: white;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  max-width: 1110px;
+  gap: 30px;
+  width: 90%;
+}
+
+/* USER PROFILE SECTION */
+.user-profile {
+  background-color: var(--color-dark-blue);
+  border-radius: 0.9rem;
+}
+
+.user-profile__header {
+  background-color: var(--color-blue);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 0.9rem;
+}
+
+.user-profile__image {
+  width: 84px;
+  height: 84px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.user-profile__name-container {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.user-profile__report-text {
+  color: var(--color-pale-blue);
+  font-size: 15px;
+}
+
+.user-profile__name {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.user-profile__timeframe-selector {
+  padding: 30px;
+}
+
+.timeframe-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.timeframe-list__button {
+  background: none;
+  border: none;
+  color: var(--color-desaturated-blue);
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.timeframe-list__button:hover,
+.timeframe-list__button:active {
+  color: white;
+}
+
+/* ACTIVITY CARDS */
+.activity-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.container-card {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.activity-card {
+  background-color: var(--color-dark-blue);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.activity-card:hover {
+  background-color: hsl(235, 45%, 35%);
+}
+
+.activity-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.activity-card__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.activity-card__options-button {
+  background: none;
+  border: none;
+  color: var(--color-pale-blue);
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.activity-card__options-button:hover {
+  opacity: 1;
+}
+
+.activity-card__time-details {
+  padding: 20px;
+}
+
+.activity-card__current-time {
+  font-size: 56px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.activity-card__previous-time {
+  color: var(--color-pale-blue);
+  font-size: 15px;
+}
+
+/* ACTIVITY CARD COLORS */
+.activity-card--work {
+  background-color: var(--color-work);
+  background-image: url("./images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: top -10px right 15px;
+  background-size: 80px 80px;
+}
+
+.activity-card--play {
+  background-color: var(--color-play);
+  background-image: url("./images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: top -10px right 15px;
+  background-size: 80px 80px;
+}
+
+.activity-card--study {
+  background-color: var(--color-study);
+  background-image: url("./images/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: top -10px right 15px;
+  background-size: 80px 80px;
+}
+
+.activity-card--exercise {
+  background-color: var(--color-exercise);
+  background-image: url("./images/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: top -10px right 15px;
+  background-size: 80px 80px;
+}
+
+.activity-card--social {
+  background-color: var(--color-social);
+  background-image: url("./images/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: top -10px right 15px;
+  background-size: 80px 80px;
+}
+
+.activity-card--self-care {
+  background-color: var(--color-self-care);
+  background-image: url("./images/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: top -10px right 15px;
+  background-size: 80px 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+
+  .activity-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .activity-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .user-profile__header {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .user-profile__image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .user-profile__name-container {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .user-profile__name {
+    font-size: 24px;
+  }
+
+  .user-profile__timeframe-selector {
+    padding: 20px;
+  }
+
+  .timeframe-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .activity-card__current-time {
+    font-size: 40px;
+  }
+}

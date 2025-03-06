@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="dashboard">
+      <section class="user-profile">
+        <div class="user-profile__header">
+          <img
+            src="./images/image-jeremy.png"
+            alt="User Profile"
+            class="user-profile__image"
+          />
+          <div class="user-profile__name-container">
+            <p class="user-profile__report-text">Report for</p>
+            <h1 class="user-profile__name">Jeremy Robson</h1>
+          </div>
+        </div>
+        <nav class="user-profile__timeframe-selector">
+          <ul class="timeframe-list">
+            <li class="timeframe-list__item">
+              <button class="timeframe-list__button">Daily</button>
+            </li>
+            <li class="timeframe-list__item">
+              <button
+                class="timeframe-list__button timeframe-list__button--active"
+              >
+                Weekly
+              </button>
+            </li>
+            <li class="timeframe-list__item">
+              <button class="timeframe-list__button">Monthly</button>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="activity-cards">
+        <article class="container-card activity-card--work">
+          <div class="activity-card">
+            <div class="activity-card__header">
+              <h2 class="activity-card__title">Work</h2>
+              <button class="activity-card__options-button">...</button>
+            </div>
+            <div class="activity-card__time-details">
+              <p class="activity-card__current-time">32hrs</p>
+              <p class="activity-card__previous-time">Last Week - 36hrs</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="container-card activity-card--play">
+          <div class="activity-card">
+            <div class="activity-card__header">
+              <h2 class="activity-card__title">Play</h2>
+              <button class="activity-card__options-button">...</button>
+            </div>
+            <div class="activity-card__time-details">
+              <p class="activity-card__current-time">10hrs</p>
+              <p class="activity-card__previous-time">Last Week - 8hrs</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="container-card activity-card--study">
+          <div class="activity-card">
+            <div class="activity-card__header">
+              <h2 class="activity-card__title">Study</h2>
+              <button class="activity-card__options-button">...</button>
+            </div>
+            <div class="activity-card__time-details">
+              <p class="activity-card__current-time">4hrs</p>
+              <p class="activity-card__previous-time">Last Week - 7hrs</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="container-card activity-card--exercise">
+          <div class="activity-card">
+            <div class="activity-card__header">
+              <h2 class="activity-card__title">Exercise</h2>
+              <button class="activity-card__options-button">...</button>
+            </div>
+            <div class="activity-card__time-details">
+              <p class="activity-card__current-time">4hrs</p>
+              <p class="activity-card__previous-time">Last Week - 5hrs</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="container-card activity-card--social">
+          <div class="activity-card">
+            <div class="activity-card__header">
+              <h2 class="activity-card__title">Social</h2>
+              <button class="activity-card__options-button">...</button>
+            </div>
+            <div class="activity-card__time-details">
+              <p class="activity-card__current-time">5hrs</p>
+              <p class="activity-card__previous-time">Last Week - 10hrs</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="container-card activity-card--self-care">
+          <div class="activity-card">
+            <div class="activity-card__header">
+              <h2 class="activity-card__title">Self Care</h2>
+              <button class="activity-card__options-button">...</button>
+            </div>
+            <div class="activity-card__time-details">
+              <p class="activity-card__current-time">2hrs</p>
+              <p class="activity-card__previous-time">Last Week - 2hrs</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
