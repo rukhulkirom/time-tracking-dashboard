@@ -14,7 +14,8 @@
         "current": 103,
         "previous": 128
       }
-    }
+    },
+    "class": "work"
   },
   {
     "title": "Play",
@@ -31,7 +32,8 @@
         "current": 23,
         "previous": 29
       }
-    }
+    },
+    "class": "play"
   },
   {
     "title": "Study",
@@ -48,7 +50,8 @@
         "current": 13,
         "previous": 19
       }
-    }
+    },
+    "class": "study"
   },
   {
     "title": "Exercise",
@@ -65,7 +68,8 @@
         "current": 11,
         "previous": 18
       }
-    }
+    },
+    "class": "exercise"
   },
   {
     "title": "Social",
@@ -82,7 +86,8 @@
         "current": 21,
         "previous": 23
       }
-    }
+    },
+    "class": "social"
   },
   {
     "title": "Self Care",
@@ -99,6 +104,7 @@
         "current": 7,
         "previous": 11
       }
-    }
+    },
+    "class": "self-care"
   }
 ]
