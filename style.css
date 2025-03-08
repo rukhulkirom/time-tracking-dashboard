@@ -102,8 +102,7 @@ body {
   transition: color 0.3s ease;
 }
 
-.timeframe-list__button:hover,
-.timeframe-list__button:active {
+.timeframe-list__button--active {
   color: white;
 }
 
@@ -223,6 +222,12 @@ body {
   background-repeat: no-repeat;
   background-position: top -10px right 15px;
   background-size: 80px 80px;
+}
+
+.error-message {
+  color: var(--color-pale-blue);
+  text-align: center;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 1024px) {
